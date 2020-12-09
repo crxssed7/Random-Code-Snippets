@@ -1,2 +1,2 @@
-# Random-WinForms-Code-Snippets
-Random Code Snippets for Windows Forms
+# Random Code Snippets
+Random Code Snippets for multiple languages
