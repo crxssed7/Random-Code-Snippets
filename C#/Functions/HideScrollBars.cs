@@ -10,9 +10,9 @@ namespace RWFCS
 		public void HideScrollBars(Panel panel)
 		{
 			panel.VerticalScroll.Maximum = 0;
-            panel.AutoScroll = false;
-            panel.HorizontalScroll.Visible = false;
-            panel.AutoScroll = true;
+			panel.AutoScroll = false;
+			panel.HorizontalScroll.Visible = false;
+			panel.AutoScroll = true;
 		}
 	}
 }
