@@ -33,6 +33,7 @@ namespace YourNameSpace
 
 		// Recolours all white pixels in an image to another specified colour, can be useful if you need to change multiple 
 		// assets for theming app.
+		// Can be easily edited so that its more customizable.
 		public static Bitmap Recolour(string imageLocation, Color newColour)
         {
             using (Image originalImage = Image.FromFile(imageLocation))
