@@ -5,6 +5,9 @@ namespace YourNameSpace
 {
 	public static class GlobalFunctions 
 	{
+
+		#region WinForms
+
 		// Compresses an image to a certain size. CompressSize is used to determine by how much the image should be compressed
 		// eg, if CompressSize = 2 then the resulting image will be half the size as the original.
 		// Useful for resizing images to thumbnail/picturebox size and reducing memory used by project.
@@ -53,5 +56,7 @@ namespace YourNameSpace
                 return newImage;
             }
         }
+
+		#endregion
 	}
 }
