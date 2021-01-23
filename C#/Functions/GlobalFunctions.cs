@@ -31,7 +31,7 @@ namespace YourNameSpace
 			panel.AutoScroll = true;
 		}
 
-		Bitmap Recolour(string imageLocation, Color newColour)
+		public static Bitmap Recolour(string imageLocation, Color newColour)
         {
             using (Image originalImage = Image.FromFile(imageLocation))
             {
