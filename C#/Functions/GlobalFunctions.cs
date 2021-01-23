@@ -31,6 +31,8 @@ namespace YourNameSpace
 			panel.AutoScroll = true;
 		}
 
+		// Recolours all white pixels in an image to another specified colour, can be useful if you need to change multiple 
+		// assets for theming app.
 		public static Bitmap Recolour(string imageLocation, Color newColour)
         {
             using (Image originalImage = Image.FromFile(imageLocation))
