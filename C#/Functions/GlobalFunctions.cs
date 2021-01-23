@@ -30,5 +30,25 @@ namespace YourNameSpace
 			panel.HorizontalScroll.Visible = false;
 			panel.AutoScroll = true;
 		}
+
+		Bitmap Recolour(string imageLocation, Color newColour)
+        {
+            using (Image originalImage = Image.FromFile(imageLocation))
+            {
+                Bitmap newImage = new Bitmap(originalImage);
+
+                for (int i = 0; i < originalImage.Height; i++)
+                {
+                    for (int j = 0; j < originalImage.Width; j++)
+                    {
+                        if (newImage.GetPixel(j, i).R > 250 && newImage.GetPixel(j, i).G > 250 && newImage.GetPixel(j, i).B > 250)
+                        {
+                            newImage.SetPixel(j, i, newColour);
+                        }
+                    }
+                }
+                return newImage;
+            }
+        }
 	}
 }
