@@ -49,7 +49,7 @@ namespace YourNameSpace
         	    	    	    	{
         	    	    	    	    	if (newImage.GetPixel(j, i).R > 250 && newImage.GetPixel(j, i).G > 250 && newImage.GetPixel(j, i).B > 250)
         	    	    	    	    	{
-        	    	    	    	    	    newImage.SetPixel(j, i, newColour);
+        	    	    	    	    	    	newImage.SetPixel(j, i, newColour);
         	    	    	    	    	}
         	    	    	    	}
         	    	    	}
