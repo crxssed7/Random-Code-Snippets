@@ -116,13 +116,13 @@ namespace YourNameSpace
         {
             Control topControl = Content.Controls[0];
 
-            // If the window on the top is different:
-            if (topControl.GetType() != control.GetType())
-            {
 				//Creates a new UserControl from T. 
 				UserControl control = (UserControl)Activator.CreateInstance(typeof(T), args ?? new object[] { });
 				control.Dock = DockStyle.Fill;
-				
+
+            // If the window on the top is different:
+            if (topControl.GetType() != control.GetType())
+            {
                 foreach (Control x in topControl.Controls) { x.Dispose(); }
                 topControl.Dispose();
 
