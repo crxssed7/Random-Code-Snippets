@@ -126,8 +126,8 @@ namespace YourNameSpace
         	   	     foreach (Control x in topControl.Controls) { x.Dispose(); }
         	   	     topControl.Dispose();
 		
-        	  	      Content.Controls.Clear();
-        	  	      Content.Controls.Add(control);
+        	  	     Content.Controls.Clear();
+        	  	     Content.Controls.Add(control);
         	   	}
         	}
 
