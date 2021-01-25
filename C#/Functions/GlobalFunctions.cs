@@ -109,6 +109,27 @@ namespace YourNameSpace
 
             return destImage;
         }
+		
+		// Switches a Panels content to a different UserControl. Handy if your app uses a paging system
+		// Courtesy of Nordic16 (https://github.com/nordic16)
+		public static void SwitchTo<T>(Panel Content, object[] args = null) where T : UserControl
+        {
+            Control topControl = Content.Controls[0];
+
+            // If the window on the top is different:
+            if (topControl.GetType() != control.GetType())
+            {
+				//Creates a new UserControl from T. 
+				UserControl control = (UserControl)Activator.CreateInstance(typeof(T), args ?? new object[] { });
+				control.Dock = DockStyle.Fill;
+				
+                foreach (Control x in topControl.Controls) { x.Dispose(); }
+                topControl.Dispose();
+
+                Content.Controls.Clear();
+                Content.Controls.Add(control);
+            }
+        }
 
 		#endregion
 	}
