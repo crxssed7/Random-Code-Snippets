@@ -65,7 +65,7 @@ namespace YourNameSpace
         	    	using (Image image = Image.FromFile(imageLocation))
         	    	{
         	    	    	// If the Width of the image is bigger than the height, then we know the sides will be cut off
-        	    	    	if (image.Width > image.Height)
+        	    	    	if (pictureBox1.Width > image.Height)
         	    	    	{
         	    	    	    	// The algorithm works by making the height of the final image the same as the height of the PictureBox (this is different for width, see else statement), 
         	    	    	    	// but we first need to find out what the final width will be so the image doesn't come out as squished.
