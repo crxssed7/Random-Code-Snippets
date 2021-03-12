@@ -1,3 +1,4 @@
+/* Center content in a div */
 .content {
     display: flex;
     flex-direction: column;
