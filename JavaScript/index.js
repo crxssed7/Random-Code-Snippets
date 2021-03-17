@@ -14,7 +14,7 @@ $.get(
     }
 );
 
-// Read from a file
+// Read from a file, using JQuery
 $.get(
     "path/to/file.txt",
     function(data) {
