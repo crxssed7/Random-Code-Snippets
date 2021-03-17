@@ -13,3 +13,11 @@ $.get(
        document.getElementById("completed").checked = data.completed;
     }
 );
+
+// Read from a file
+$.get(
+    "path/to/file.txt",
+    function(data) {
+       console.log(data);
+    }
+);
